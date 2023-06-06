@@ -53,8 +53,13 @@ footer {
   background-color: #fff;
   width: 100%;
   padding: 20px;
-  height: 200px;
+  /* height: 200px; */
   border: 1px solid black;
+}
+
+.multi-img {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
