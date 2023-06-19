@@ -55,27 +55,17 @@ footer {
 /* Image Placeholders */
 .sample-img {
   background-color: #fff;
-  width: 100%;
   padding: 20px;
   /* height: 200px; */
   border: 1px solid black;
-}
-
-.img1 {
-  max-width: 300px;
-}
-
-.img2 {
-  max-width: 75%;
-}
-
-.img3 {
-  max-width: 50%;
+  transform: rotate(8deg);
+  box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 .multi-img {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
