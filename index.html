@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Media Query for Screen</title>
+    <title>FrankenSite</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
@@ -24,11 +24,12 @@
     <!-- Body -->
     <main>
       <aside>
-        <h2>This is a sidebar.</h2>
-        <div><img src="./assets/images/test.png" class="sample-img"></div>
+        <h2 data-bodyHeader="Look at me!">This is a sidebar.</h2>
+        <div><img src="./assets/images/test.png" class="sample-img" id="rotate"></div>
         <p>When the screen size hits 576px or smaller...</p>
       </aside>
 
+      <section class="topBody">
       <section>
         <h2> This is the body.</h2>
         <div class="sample-img hide">Image</div>
@@ -36,14 +37,47 @@
         <br />
         <h2>But the real problem is...</h2>
         <section class="multi-img">
-        <div><img src="./assets/images/test.png" class="sample-img"></div>
-        <div><img src="./assets/images/test.png" class="sample-img"></div>
-        <div><img src="./assets/images/test.png" class="sample-img"></div>
+        <div><img src="./assets/images/test.png" class="sample-img" id="rotate"></div>
+        <div><img src="./assets/images/test.png" class="sample-img" id="rotate"></div>
+        <div><img src="./assets/images/test.png" class="sample-img" id="rotate"></div>
         </section>
         <p>
           What are we going to do about the sidebar and body columns becoming
           squished on a smaller screen?
         </p>
+      </section>
+
+      <section><form>
+        <h3>Add a Comment:</h3>
+        <p>
+          <label for="username">Name:</label>
+          <input class="text-input" id="username" type="text" placeholder="First Last" />
+        </p>
+        <p>
+          <label for="email">E-mail:</label>
+          <input class="text-input" id="email" type="text" placeholder="me@example.com" />
+        </p>
+        <p class="flex-row">
+          <label for="expertise">CSS level of expertise:</label>
+          <select id="expertise">
+            <option>Beginner</option>
+            <option selected>Intermediate</option>
+            <option>Advanced</option>
+          </select>
+        </p>
+        <p>
+          <label for="comment">Comment:</label>
+          <textarea class="text-input" id="comment" placeholder="Great article!"></textarea>
+        </p>
+        <p class="flex-row">
+          <input class="checkbox" id="agreement" type="checkbox" />
+          <label for="agreement">I agree to share my e-mail address with The CSS Blog</label>
+        </p>
+        <p>
+          <button>Submit</button>
+        </p>
+      </form>
+      </section>
       </section>
     </main>
 

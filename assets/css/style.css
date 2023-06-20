@@ -42,10 +42,11 @@ aside {
   flex-wrap: wrap;
 }
 
-section {
+.topBody {
   flex: 70%;
   background-color: #fff;
   padding: 20px;
+  border: #13293d solid 1px;
 }
 
 footer {
@@ -73,6 +74,11 @@ section:hover .hide {
   box-shadow: 10px 10px 5px #aaaaaa;
 }
 
+#rotate:hover {
+  transform: rotate(-8deg);
+  background-image: url(../images/funny-face-hilarious.gif);
+}
+
 .multi-img {
   display: flex;
   flex-wrap: wrap;
@@ -81,15 +87,24 @@ section:hover .hide {
 
 .sample-img:hover {
   background-image: url(../images/funny-face-hilarious.gif);
-  transform: rotate(-8deg);
 }
 
 h2::before {
   content: "👉";
 }
 
-h2::after {
-  content: "👈";
+h2[data-bodyHeader]:hover::after {
+  content:attr(data-bodyHeader);
+  position: relative;
+  left: 0px;
+  bottom: 24px;
+  min-width: 200px;
+  border: 1px #aaaaaa solid;
+  background-color: #13293d;
+  padding: 12px;
+  color: #fff;
+  font-size: 80%;
+  z-index: 1;
 }
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
