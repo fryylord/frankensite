@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
 
+:root {
+  --lightest: #fff;
+  --light: #b9c6ae;
+  --dark: #d8a47f;
+  --darkest: #13293d;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,14 +19,14 @@ body {
 header {
   padding: 60px;
   text-align: center;
-  background: #13293d;
+  background: var(--darkest);
   font-family: 'Kablammo', cursive;
-  color: #fff;
+  color: var(--lightest);
 }
 
 nav {
   display: flex;
-  background-color: #d8a47f;
+  background-color: var(--dark);
 }
 
 nav p {
@@ -37,14 +44,14 @@ div{
 
 aside {
   flex: 30%;
-  background-color: #b9c6ae;
+  background-color: var(--light);
   padding: 20px;
   flex-wrap: wrap;
 }
 
 .topBody {
   flex: 70%;
-  background-color: #fff;
+  background-color: var(--lightest);
   padding: 20px;
   border: #13293d solid 1px;
 }
@@ -52,21 +59,21 @@ aside {
 footer {
   padding: 20px;
   text-align: center;
-  background: #13293d;
-  color: #fff;
+  background: var(--darkest);
+  color: var(--lightest);
 }
 
-.hide {
+.hid {
   display: none;
 }
 
-section:hover .hide {
+section:hover .hid {
   display: block;
 }
 
 /* Image Placeholders */
 .sample-img {
-  background-color: #fff;
+  background-color: var(--lightest);
   padding: 20px;
   /* height: 200px; */
   border: 1px solid black;
@@ -102,7 +109,7 @@ h2[data-bodyHeader]:hover::after {
   border: 1px #aaaaaa solid;
   background-color: #13293d;
   padding: 12px;
-  color: #fff;
+  color: var(--lightest);
   font-size: 80%;
   z-index: 1;
 }

@@ -4,7 +4,10 @@
     <title>FrankenSite</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+
   </head>
   <body>
     <!-- Header -->
@@ -32,7 +35,7 @@
       <section class="topBody">
       <section>
         <h2> This is the body.</h2>
-        <div class="sample-img hide">Image</div>
+        <div class="sample-img hid">Image</div>
         <p>..all of the image placeholders will change colors!</p>
         <br />
         <h2>But the real problem is...</h2>
@@ -48,36 +51,48 @@
       </section>
 
       <section><form>
-        <h3>Add a Comment:</h3>
-        <p>
-          <label for="username">Name:</label>
-          <input class="text-input" id="username" type="text" placeholder="First Last" />
-        </p>
-        <p>
-          <label for="email">E-mail:</label>
-          <input class="text-input" id="email" type="text" placeholder="me@example.com" />
-        </p>
-        <p class="flex-row">
-          <label for="expertise">CSS level of expertise:</label>
-          <select id="expertise">
-            <option>Beginner</option>
-            <option selected>Intermediate</option>
-            <option>Advanced</option>
-          </select>
-        </p>
-        <p>
-          <label for="comment">Comment:</label>
-          <textarea class="text-input" id="comment" placeholder="Great article!"></textarea>
-        </p>
-        <p class="flex-row">
-          <input class="checkbox" id="agreement" type="checkbox" />
-          <label for="agreement">I agree to share my e-mail address with The CSS Blog</label>
-        </p>
-        <p>
-          <button>Submit</button>
-        </p>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputFile">File input</label>
+          <input type="file" id="exampleInputFile">
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Check me out
+          </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
       </form>
       </section>
+      
+      <section>
+        <table class="table table-striped">
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td class="danger">Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+        </table>
+      </section>
+
       </section>
     </main>
 
@@ -88,5 +103,6 @@
         window!
       </h3>
     </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
   </body>
 </html>
