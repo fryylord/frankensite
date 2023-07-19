@@ -38,10 +38,6 @@ main {
   display: flex;
 }
 
-div{
-  display: flex;
-}
-
 aside {
   flex: 30%;
   background-color: var(--light);
